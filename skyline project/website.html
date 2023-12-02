@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail-like Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        header {
+            background-color: #d8d8d8;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .details h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .options {
+            cursor: pointer;
+            font-size: 18px;
+            color: #ccc;
+            margin-left: 15px;
+        }
+        .inner-cases{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-gap: 1rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Favour cohort11 Media</h1>
+    </header>
+
+
+        
+    <main class="container">
+        <div class="main">
+            <div class="email">
+                <div class="details">
+                    <h1>My Cases</h1> 
+                </div>
+                <div class="options"><button>See all</button></div>
+            </div>
+            <div class="cases">
+                <div class="inner-cases" style="background-color: #ccc; border-radius: 5px; margin-bottom: 20px;">
+                    <form class="flex">
+                        <input type="checkbox" value="Account">
+                        <label for="checkbox">Account</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Type</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Status</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Priority</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Action</label>
+                    </form>
+                </div>
+                <div class="inner-cases">
+                    <form class="flex">
+                        <input type="checkbox" value="Account">
+                        <label for="checkbox">Easy Reservations</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Incident</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox"><b style="background-color:rgb(210, 243, 210); color: lightgreen; padding: 5px; border-radius: 6px;">Active</b></label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Normal</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox" style="font-size: xx-large;">&#8942;</label>
+                    </form>
+                </div>
+                <div class="inner-cases">
+                    <form class="flex">
+                        <input type="checkbox" value="Account">
+                        <label for="checkbox">Brooklyn Simmons</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Questions</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox"><b style="background-color: rgb(238, 185, 166); color: orange; padding: 10px; border-radius: 6px;">New</b></label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">High</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox" style="font-size: xx-large;">&#8942;</label>
+                    </form>
+                </div>
+                <div class="inner-cases">
+                    <form class="flex">
+                        <input type="checkbox" value="Account">
+                        <label for="checkbox">Easy Reservations</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Incident</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox"><b style="background-color:rgb(210, 243, 210); color: lightgreen; padding: 5px; border-radius: 6px;">Active</b></label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Normal</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox" style="font-size: xx-large;">&#8942;</label>
+                    </form>
+                </div>
+
+
+                <div class="inner-cases">
+                    <form class="flex">
+                        <input type="checkbox" value="Account">
+                        <label for="checkbox">Brooklyn Simmons</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">Questions</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox"><b style="background-color: rgb(238, 185, 166); color: orange; padding: 10px; border-radius: 6px;">New</b></label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox">High</label>
+                    </form>
+                    <form class="flex">
+                        <label for="checkbox" style="font-size: xx-large;">&#8942;</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="email">
+                <div class="details">
+                    <h1>My Inbox</h1>
+                    
+                </div>
+                <div class="options"><button>view all</button></div>
+            </div>
+            <div class="email">
+                <div class="details">
+                    <div class="avatar">
+                        <img src="images/radius.jpg" alt="User Avatar">
+                    </div>
+                    <h2>Esther Howard</h2>
+                    <p>sera.cruz@example.com</p>
+                </div>
+                <div class="options" style="font-size: xx-large;">&#8942;</div>
+            </div>
+            <div class="email">
+                <div class="details">
+                    <div class="avatar">
+                        <img src="images/radius.jpg" alt="User Avatar">
+                    </div>
+                    <h2>John Doe</h2>
+                    <p>john.doe@example.com</p>
+                </div>
+                <div class="options" style="font-size: xx-large;">&#8942;</div>
+            </div>
+            <div class="email">
+                <div class="details">
+                    <div class="avatar">
+                        <img src="images/radius.jpg" alt="User Avatar">
+                    </div>
+                    <h2>Jenny Wilson</h2>
+                    <p>curtis.wearover@example.com</p>
+                </div>
+                <div class="options" style="font-size: xx-large;">&#8942;</div>
+            </div>
+    
+            <div class="email">
+                <div class="details">
+                    <div class="avatar">
+                        <img src="https://placekitten.com/50/51" alt="User Avatar">
+                    </div>
+                    <h2>Jane Smith</h2>
+                    <p>jane.smith@example.com</p>
+                </div>
+                <div class="options" style="font-size: xx-large;">&#8942;</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

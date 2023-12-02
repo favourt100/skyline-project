@@ -1,0 +1,335 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Dots Icon</title>
+    <style>
+        .vertical-dots {
+            font-size: 20px;
+            line-height: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Click the vertical dots for options: <span class="vertical-dots">&#8942;</span></p>
+
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail-like Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .details h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gmail-like Inbox</h1>
+    </header>
+
+    <main>
+        <div class="email">
+            <div class="avatar">
+                <img src="https://placekitten.com/50/50" alt="User Avatar">
+            </div>
+            <div class="details">
+                <h2>John Doe</h2>
+                <p>john.doe@example.com</p>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="avatar">
+                <img src="https://placekitten.com/50/51" alt="User Avatar">
+            </div>
+            <div class="details">
+                <h2>Jane Smith</h2>
+                <p>jane.smith@example.com</p>
+            </div>
+        </div>
+    
+    </main>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail-like Inbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .details h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .options {
+            cursor: pointer;
+            font-size: 18px;
+            color: #ccc;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gmail-like Inbox</h1>
+    </header>
+
+    <main>
+        <div class="email">
+            <div class="details">
+                <div class="avatar">
+                    <img src="https://placekitten.com/50/50" alt="User Avatar">
+                </div>
+                <h2>John Doe</h2>
+                <p>john.doe@example.com</p>
+            </div>
+            <div class="options">&#8942;</div>
+        </div>
+
+        <div class="email">
+            <div class="details">
+                <div class="avatar">
+                    <img src="https://placekitten.com/50/51" alt="User Avatar">
+                </div>
+                <h2>Jane Smith</h2>
+                <p>jane.smith@example.com</p>
+            </div>
+            <div class="options">&#8942;</div>
+        </div>
+         More emails go here
+    </main>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cases Interface</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #left-panel {
+            background-color: #f2f2f2;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Display items vertically */
+            align-items: center;
+        }
+
+        #left-panel h1 {
+            font-size: 22px;
+            color: #202124;
+            margin-bottom: 20px;
+        }
+
+        #case-headers {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+            display: flex; /* Display items horizontally */
+        }
+
+        #case-headers li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #case-headers li:hover {
+            background-color: #e8e8e8;
+        }
+
+        .case-details {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #fff; /* Full background color */
+        }
+
+        .case-details:hover {
+            background-color: #f9f9f9;
+        }
+
+        .case-details h3,
+        .case-details p {
+            margin: 0;
+            color: #202124;
+        }
+
+        .case-details h3 {
+            font-size: 16px;
+        }
+
+        .case-details p {
+            font-size: 14px;
+        }
+
+        .case-details div:last-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="left-panel">
+        <h1>My Cases</h1>
+        <ul id="case-headers">
+            <li>Account</li>
+            <li>Type</li>
+            <li>Status</li>
+            <li>Priority</li>
+            <li>Action</li>
+            <!-- Add more headers as needed -->
+        <!-- </ul>
+        <div class="case-details">
+            <div>
+                <h3>Case Subject 1</h3>
+                <p>Account Name</p>
+            </div>
+            <div>Open</div>
+        </div>
+        <div class="case-details">
+            <div>
+                <h3>Case Subject 2</h3>
+                <p>Another Account</p>
+            </div>
+            <div>Closed</div>
+        </div>
+        <!-- Add more cases as needed -->
+    <!-- </div>
+
+</body>
+</html>
+
+ --> --> -->
